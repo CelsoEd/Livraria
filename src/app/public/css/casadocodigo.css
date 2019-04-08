@@ -1,0 +1,174 @@
+.cabecalhoPrincipal {
+    background-color: #FFAA60;
+}
+
+.cabecalhoPrincipal .logo {
+    margin: 0;
+    font-family: 'FonteLogo', sans-serif;
+	font-size: 42px;
+	color: #363636;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.cabecalhoPrincipal-navegacao {
+    text-align: right;
+}
+
+.cabecalhoPrincipal-navegacao .login {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 38px;
+    font-size: 20px;
+    padding: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.cabecalhoPrincipal-navegacao .login i {
+    margin-right: 10px;
+}
+
+.conteudoPrincipal {
+    min-height: 70%;
+}
+
+.rodape {
+    background-color: #FBFAF9;
+    border-top: 1px solid #EBEBEE;
+}
+
+/* .rodape .logo-rodape {
+    width: 80px;
+    height: 105px;
+    margin: 10px;
+}
+
+.rodape .redesSociais {
+    list-style: none;
+    text-align: right;
+} 
+
+.rodape .redesSociais li a {
+    color: #6C6A69;
+    font-weight: 500;
+
+    display: inline-block;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    line-height: 2.7;
+}
+
+.rodape .redesSociais .compartilhar-facebook {
+    background-image: url('/estatico/imagens/facebook.png');
+}
+
+.rodape .redesSociais .compartilhar-twitter {
+    background-image: url('/estatico/imagens/twitter.png');
+} */
+
+nav#menu{
+    background-color: #0a0707;
+}
+
+nav#menu ul {
+    list-style: none; /*sumir com os marcadores*/
+    text-transform: uppercase; /*deixar o menu todo em maiusculo*/
+}
+nav#menu li {
+    display: inline-block; /*vai fazer com que seja exibido na mesma linha*/
+    background-color: #CD9B1D; 
+    padding: 10px; /*espaço dentro do objeto*/
+    margin: 2px; /*espaço fora do objeto*/
+    transition: background-color 1s; /*tempo de mudança*/
+}
+nav#menu li:hover{
+    background-color:#FFC125;/*muda a cor ao passar o mouse*/
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu a{
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color: white;/*muda a cor da fonte ao passar o mouse*/
+    text-decoration: underline; /*sublinhado*/
+}
+
+.cabecalho-artigo h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 40pt;
+	color: black;     
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+/* .cabecalho-artigo h2{
+	font-size: 20pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+} */
+.cabecalho-artigo h3{
+	font-size: 20pt;
+	color: #606060;
+}
+
+/*Formatação de imagens*/
+figure.foto_legenda{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    border: 8px solid width;
+	box-shadow: 1px 1px 4px black;
+    max-width: 80%; /*responsividade, imagem vai se adaptar ao tamanho do layout*/
+    max-height: 50%;
+}
+figure.foto_legenda img{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+figure.foto_legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+	max-width: 100%;
+}
+figure.foto_legenda:hover figcaption{
+	opacity: 1;
+}
+
+/* body{
+	font-family: Arial,sans-serif; 
+	color: rgba(0,0,0,1);
+    background-color: #EEDD82;
+} */
+
+body{
+    background: #EEDD82;
+    font-size: 14pt;
+}
+
+p{
+	text-align: justify; 
+	text-indent: 50px
+}
+
+.conteudoPrincipal h2{
+    font-size: 20pt;
+	color: #0a0707;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
