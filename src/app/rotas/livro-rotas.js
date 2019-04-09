@@ -17,6 +17,7 @@ module.exports = (app) => {
     });
 
     app.get(rotasLivro.lista, livroControlador.lista());
+    app.get(rotasLivro.estande, livroControlador.estande());
 
     app.route(rotasLivro.cadastro)
         .get(livroControlador.formularioCadastro())
@@ -26,4 +27,5 @@ module.exports = (app) => {
     app.get(rotasLivro.edicao, livroControlador.formularioEdicao());
 
     app.delete(rotasLivro.delecao, livroControlador.remove());
+    app.delete(rotasLivro.solicitacao,livroControlador.remove());
 };

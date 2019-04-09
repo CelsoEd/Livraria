@@ -17,16 +17,16 @@ module.exports = (app) => {
         (email, senha, done) => {
             const usuarioDao = new UsuarioDao(db);
             usuarioDao.buscaPorEmail(email)
-                        .then(usuario => {
-                            if (!usuario || senha != usuario.senha) {
-                                return done(null, false, {
-                                    mensagem: 'Login e senha incorretos!'
-                                });
-                            }
+                .then(usuario => {
+                    if (!usuario || senha != usuario.senha) {
+                        return done(null, false, {
+                            mensagem: 'Login e senha incorretos!'
+                        });
+                    }
 
-                            return done(null, usuario);
-                        })
-                        .catch(erro => done(erro, false));
+                    return done(null, usuario);
+                })
+                .catch(erro => done(erro, false));
         }
     ));
 
@@ -44,8 +44,8 @@ module.exports = (app) => {
     });
 
     app.use(sessao({
-        secret: 'node alura',
-        genid: function(req) {
+        secret: 'celso',
+        genid: function (req) {
             return uuid();
         },
         resave: false,

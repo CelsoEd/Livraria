@@ -7,7 +7,9 @@ class BaseControlador {
     static rotas() {
         return {
             home: '/',
-            login: '/login'
+            login: '/login',
+            quemSomos: '/quemSomos',
+            estandeLivros: '/estandeLivros'
         };
     }
 
@@ -15,6 +17,22 @@ class BaseControlador {
         return function(req, resp) {
             resp.marko(
                 templates.base.home
+            );
+        };
+    }
+
+    quemSomos(){
+        return function(req, resp){
+            resp.marko(
+                templates.base.quemSomos
+            );
+        };
+    }
+
+    estandeLivros(){
+        return function(req, resp){
+            resp.marko(
+                templates.base.estandeLivros
             );
         };
     }

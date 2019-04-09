@@ -1,5 +1,5 @@
 .cabecalhoPrincipal {
-    background-color: #FFAA60;
+    background-color: #20B2AA;
 }
 
 .cabecalhoPrincipal .logo {
@@ -66,10 +66,16 @@
 
 .rodape .redesSociais .compartilhar-twitter {
     background-image: url('/estatico/imagens/twitter.png');
-} */
-
+}*/
+li#menuT{
+    padding-top: 30px;
+}
+div#menuPrincipal{
+    text-align: center;
+    margin-top: 20px;
+}
 nav#menu{
-    background-color: #0a0707;
+    background-color: #E0FFFF;
 }
 
 nav#menu ul {
@@ -78,13 +84,13 @@ nav#menu ul {
 }
 nav#menu li {
     display: inline-block; /*vai fazer com que seja exibido na mesma linha*/
-    background-color: #CD9B1D; 
-    padding: 10px; /*espaço dentro do objeto*/
-    margin: 2px; /*espaço fora do objeto*/
+    background-color: #48D1CC; 
+    padding: 15px; /*espaço dentro do objeto*/
+    margin: 10px; /*espaço fora do objeto*/
     transition: background-color 1s; /*tempo de mudança*/
 }
 nav#menu li:hover{
-    background-color:#FFC125;/*muda a cor ao passar o mouse*/
+    background-color:#20B2AA;/*muda a cor ao passar o mouse*/
 }
 nav#menu h1{
     display: none;
@@ -100,7 +106,7 @@ nav#menu a:hover{
 
 .cabecalho-artigo h1{
 	font-family: 'FonteLogo', sans-serif;
-	font-size: 40pt;
+	font-size: 30pt;
 	color: black;     
 	margin-bottom: 0px;
 	margin-top: 0px;
@@ -112,7 +118,7 @@ nav#menu a:hover{
 	margin: 0px;
 } */
 .cabecalho-artigo h3{
-	font-size: 20pt;
+	font-size: 15pt;
 	color: #606060;
 }
 
@@ -155,7 +161,7 @@ figure.foto_legenda:hover figcaption{
 } */
 
 body{
-    background: #EEDD82;
+    background: #E0FFFF;
     font-size: 14pt;
 }
 
@@ -170,5 +176,8 @@ p{
 	background-color: #dddddd;
 	padding: 5px 0px 5px 10px;
 	margin: 10px 0px 10px 0px;
+}
+div#loja{
+    text-align: center;
 }
 

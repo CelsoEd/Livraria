@@ -9,12 +9,28 @@ class LivroControlador {
 
     static rotas() {
         return {
-            autenticadas: '/livros/*',
+            autenticadas: '/livros*',
             lista: '/livros',
             cadastro: '/livros/form',
             edicao: '/livros/form/:id',
-            delecao: '/livros/:id'
+            delecao: '/livros/:id',
+            estande: '/estande',
+            solicitacao: '/estande/:id'
         };
+    }
+
+    estande(){
+        return function(req, resp){
+            const livroDao = new LivroDao(db);
+            livroDao.lista()
+                    .then(livros => resp.marko(
+                        templates.livros.estande,
+                        {
+                            livros: livros
+                        }
+                    ))
+                    .catch(erro => console.log(erro));
+        }
     }
 
     lista() {
