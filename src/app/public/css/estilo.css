@@ -1,0 +1,151 @@
+/*Estilos da body*/
+body{
+    background: #EEE9E9;
+    font-size: 14pt;
+}
+/*Estilos do Cabeçalho Principal*/
+.cabecalhoPrincipal {
+    background-color: #20B2AA;
+}
+.cabecalhoPrincipal .logo {
+    margin: 0;
+    font-family: 'FonteLogo', sans-serif;
+	font-size: 45px;
+	color: #363636;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+    margin-bottom: 0px;
+    width: 500px;
+}
+.cabecalhoPrincipal-navegacao {
+    text-align: right;
+}
+/*Estilos do Logind no Cabeçalho Principal*/
+.cabecalhoPrincipal-navegacao .login {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 38px;
+    font-size: 20px;
+    padding: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.cabecalhoPrincipal-navegacao .login i {
+    margin-right: 10px;
+}
+/*Estilos do Conteudo Principal no corpo do sistema*/
+div.container{
+    width: 950px;
+}
+.conteudoPrincipal {
+    min-height: 70%;
+}
+.cabecalho-artigo h1{/*Estilos dos titulos principais*/
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: black;     
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+#livros{
+    text-align: center;
+}
+.conteudoPrincipal h2{
+    font-size: 20pt;
+	color: #0a0707;
+	background-color:#dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+.cabecalho-artigo h3{
+	font-size: 15pt;
+	color: #606060;
+}
+p{
+	text-align: justify; 
+	text-indent: 50px
+}
+/*Formatação de imagens*/
+figure.foto_legenda{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    border: 8px solid width;
+	box-shadow: 1px 1px 4px black;
+    max-width: 80%; /*responsividade, imagem vai se adaptar ao tamanho do layout*/
+    max-height: 50%;
+    width: 500px;
+    height: 500px;
+}
+figure.foto_legenda img{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+figure.foto_legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+	max-width: 100%;
+}
+figure.foto_legenda:hover figcaption{
+	opacity: 1;
+}
+div#loja{
+    text-align: center;
+}
+
+/*Estilos do Menu Principal*/
+li#menuT{
+    padding-top: 30px;
+}
+div#menuPrincipal{
+    text-align: center;
+    margin-top: 20px;
+}
+nav#menu{
+    background-color: #EEE9E9;
+}
+
+nav#menu ul {
+    list-style: none; /*sumir com os marcadores*/
+    text-transform: uppercase; /*deixar o menu todo em maiusculo*/
+}
+nav#menu li {
+    display: inline-block; /*vai fazer com que seja exibido na mesma linha*/
+    background-color: #BEBEBE; 
+    padding: 15px; /*espaço dentro do objeto*/
+    margin: 10px; /*espaço fora do objeto*/
+    transition: background-color 1s; /*tempo de mudança*/
+}
+nav#menu li:hover{
+    background-color:#778899;/*muda a cor ao passar o mouse*/
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu a{
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color: white;/*muda a cor da fonte ao passar o mouse*/
+    text-decoration: underline; /*sublinhado*/
+}
+
+/*Estilos do Rodapé*/
+.rodape {
+    background-color: rgb(85, 185, 175);
+    border-top: 1px solid #EBEBEE;
+}
+.rodape p{
+    text-align: center;
+}
+
+

@@ -2,7 +2,7 @@
 "use strict";
 
 var marko_template = module.exports = require("marko/src/html").t(__filename),
-    marko_componentType = "/casadocodigo$1.0.0/src/app/views/livros/estande/estande.marko",
+    marko_componentType = "/casa$1.0.0/src/app/views/livros/estande/estande.marko",
     components_helpers = require("marko/src/components/helpers"),
     marko_renderer = components_helpers.r,
     marko_defineComponent = components_helpers.c,
@@ -18,11 +18,11 @@ var marko_template = module.exports = require("marko/src/html").t(__filename),
 function render(input, out, __component, component, state) {
   var data = input;
 
-  out.w("<html><head><meta charset=\"utf-8\"><link rel=\"stylesheet\" href=\"/estatico/css/bootstrap.min.css\"><link rel=\"stylesheet\" href=\"/estatico/css/fontawesome.min.css\"><link rel=\"stylesheet\" href=\"/estatico/css/casadocodigo.css\"></head><body>");
+  out.w("<html><head><meta charset=\"utf-8\"><link rel=\"stylesheet\" href=\"/estatico/css/bootstrap.min.css\"><link rel=\"stylesheet\" href=\"/estatico/css/fontawesome.min.css\"><link rel=\"stylesheet\" href=\"/estatico/css/estilo.css\"></head><body>");
 
   component_globals_tag({}, out);
 
-  out.w("<header class=\"cabecalhoPrincipal\"><div class=\"container\"><div class=\"row align-items-center\"><div class=\"col-4\"><h1 class=\"logo\"><img src=\"/estatico/imagens/logo.png\" alt=\"Livraria\" width=\"75\">Livraria Futuro</h1></div><div class=\"cabecalhoPrincipal-navegacao col-8\"><a href=\"/login\" class=\"login\"><i class=\"fas fa-sign-in-alt\"></i>Administrativo</a></div></div></div></header><div class=\"container\" id=\"menuPrincipal\"><nav id=\"menu\"><ul><li id=\"menuT\"><a href=\"/\">Home</a></li><li id=\"menuT\"><a href=\"/QuemSomos\">Quem Somos</a></li><li id=\"menuT\"><a href=\"/estande\">Estande de Livros</a></li><li id=\"menuT\"><a href=\"/estandeLivros\">Estande Virtual</a></li></ul></nav></div><main class=\"conteudoPrincipal\"><div class=\"container\"><h1> Listagem de livros </h1><table id=\"livros\" class=\"table table-striped table-hover\"><thead class=\"thead-dark\"><tr><th>ID</th><th>Título</th><th>Descrição</th><th>Remover</th></tr></thead><tbody>");
+  out.w("<header class=\"cabecalhoPrincipal\"><div class=\"container\"><div class=\"row align-items-center\"><div class=\"col-4\"><h1 class=\"logo\"><img src=\"/estatico/imagens/logo.png\" alt=\"Livraria\" width=\"75\">Livraria Futuro</h1></div><div class=\"cabecalhoPrincipal-navegacao col-8\"><a href=\"/livros\" class=\"login\"><i class=\"fas fa-sign-in-alt\"></i>Administrativo</a></div></div></div></header><div class=\"container\" id=\"menuPrincipal\"><nav id=\"menu\"><ul><li id=\"menuT\"><a href=\"/\">Home</a></li><li id=\"menuT\"><a href=\"/QuemSomos\">Quem Somos</a></li><li id=\"menuT\"><a href=\"/estande\">Estande de Livros</a></li><li id=\"menuT\"><a href=\"/estandeLivros\">Lançamentos</a></li></ul></nav></div><main class=\"conteudoPrincipal\"><div class=\"container\"><h1> Listagem de livros </h1><table id=\"livros\" class=\"table table-striped table-hover\"><thead class=\"thead-dark\"><tr><th>ID</th><th>Título</th><th>Descrição</th><th>Solicitar</th></tr></thead><tbody>");
 
   var for__38 = 0;
 
@@ -39,14 +39,14 @@ function render(input, out, __component, component, state) {
       marko_escapeXml(livro.descricao) +
       "</td><td><a href=\"#\" data-ref=\"" +
       marko_escapeXmlAttr(livro.id) +
-      "\" data-type=\"remocao\">Remover</a></td></tr>");
+      "\" data-type=\"remocao\">Solicitar</a></td></tr>");
   });
 
-  out.w("</tbody></table></div></main><footer class=\"rodape\"></footer><script src=\"/estatico/js/solicita-livro.js\">\r\n        </script>");
+  out.w("</tbody></table></div></main><footer class=\"rodape\"><div class=\"container\"><div><p>Copyright &copy; 2019 - by Larissa Morais and Celso Eduardo</p></div></div></footer><script src=\"/estatico/js/solicita-livro.js\">\r\n    </script>");
 
   init_components_tag({}, out);
 
-  await_reorderer_tag({}, out, __component, "48");
+  await_reorderer_tag({}, out, __component, "51");
 
   out.w("</body></html>");
 }
@@ -59,7 +59,7 @@ marko_template._ = marko_renderer(render, {
 marko_template.Component = marko_defineComponent({}, marko_template._);
 
 marko_template.meta = {
-    id: "/casadocodigo$1.0.0/src/app/views/livros/estande/estande.marko",
+    id: "/casa$1.0.0/src/app/views/livros/estande/estande.marko",
     tags: [
       "marko/src/components/taglib/component-globals-tag",
       "marko/src/components/taglib/init-components-tag",

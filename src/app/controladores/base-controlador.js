@@ -69,6 +69,17 @@ class BaseControlador {
             })(req, resp, next);
         };
     }
+
+    logout(){
+        return function(req, resp){
+            const passport = req.passport;
+
+            passport.deserializeUser()
+        }
+    }
+
+    
+
 }
 
 module.exports = BaseControlador;
