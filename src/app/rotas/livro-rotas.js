@@ -5,6 +5,7 @@ const Livro = require('../modelos/livro');
 
 const BaseControlador = require('../controladores/base-controlador');
 
+//define as rotas de requisiçoes referente a livros
 module.exports = (app) => {
     const rotasLivro = LivroControlador.rotas();
     

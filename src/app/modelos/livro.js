@@ -1,5 +1,6 @@
 const { check } = require('express-validator/check');
 
+//modelo de validaçao para cadastro do livro
 class Livro {
     static validacoes() {
         return [

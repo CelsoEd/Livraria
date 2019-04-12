@@ -1,6 +1,7 @@
 const sqlite3 = require('sqlite3').verbose();
 const bd = new sqlite3.Database('data.db');
 
+//banco de dados SQLite3 com alguns dados ja inseridos para teste
 const USUARIOS_SCHEMA = `
 CREATE TABLE IF NOT EXISTS usuarios (
     id INTEGER PRIMARY KEY AUTOINCREMENT, 
@@ -48,6 +49,7 @@ INSERT INTO livros (
 ) SELECT 'JavaScript na prática', 40.0, 'Como desenvolver com JavaScript.' WHERE NOT EXISTS (SELECT * FROM livros WHERE titulo = 'JavaScript na prática')
 `;
 
+//executando os comandos SQL definidos acima
 bd.serialize(() => {
     bd.run("PRAGMA foreign_keys=ON");
     bd.run(USUARIOS_SCHEMA);

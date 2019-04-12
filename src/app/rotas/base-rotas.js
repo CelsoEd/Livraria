@@ -1,6 +1,6 @@
 const BaseControlador = require('../controladores/base-controlador');
 const baseControlador = new BaseControlador();
-
+//definincoes da rota e da ação da classe controle 
 module.exports = (app) => {
     const rotasBase = BaseControlador.rotas();
 

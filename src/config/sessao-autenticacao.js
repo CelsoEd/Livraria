@@ -8,7 +8,7 @@ const db = require('./database');
 
 module.exports = (app) => {
 
-    // configuração da sessão e da autenticação.
+    //estrategia de login
     passport.use(new LocalStrategy(
         {
             usernameField: 'email',
@@ -30,6 +30,7 @@ module.exports = (app) => {
         }
     ));
 
+    // configuração da sessão e da autenticação.
     passport.serializeUser((usuario, done) => {
         const usuarioSessao = {
             nome: usuario.nome_completo,

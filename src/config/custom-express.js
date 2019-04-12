@@ -13,27 +13,28 @@ app.use('/estatico', express.static('src/app/public'));
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+//metodo para substituir metodo post para put do botao salvar
 app.use(methodOverride(function (req, res) {
     if (req.body && typeof req.body === 'object' && '_method' in req.body) {
-      // look in urlencoded POST bodies and delete it
       var method = req.body._method;
       delete req.body._method;
       return method;
     }
 }));
-
+//define o arquivo de autenticação de login
 const sessaoAutenticacao = require('./sessao-autenticacao');
 sessaoAutenticacao(app);
-
+//define o arquivo principal de rotas
 const rotas = require('../app/rotas/rotas');
 rotas(app);
 
+//caso tente acessar uma pagina que nao existe
 app.use(function (req, resp, next) {
     return resp.status(404).marko(
         templates.base.erro404
     );
 });
-
+//caso tente passar uma requisição invalida
 app.use(function (erro, req, resp, next) {
     return resp.status(500).marko(
         templates.base.erro500

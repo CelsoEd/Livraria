@@ -4,6 +4,7 @@ class LivroDao {
         this._db = db;
     }
 
+    //metodos de acesso ao banco de dados livro
     adiciona(livro) {
         return new Promise((resolve, reject) => {
             this._db.run(`
